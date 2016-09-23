@@ -5,7 +5,7 @@ public class Ejemplar {
 	private int id;
 	private String editorial;
 	private int numPaginas;
-	private int idLibro;
+	private Libro lib;
 	/**
 	 * 
 	 */
@@ -14,7 +14,6 @@ public class Ejemplar {
 		this.setId(-1);
 		this.setEditorial("");
 		this.setNumPaginas(0);
-		this.setIdLibro(0);
 	}
 	public int getId() {
 		return id;
@@ -34,12 +33,13 @@ public class Ejemplar {
 	public void setNumPaginas(int numPaginas) {
 		this.numPaginas = numPaginas;
 	}
-	public int getIdLibro() {
-		return idLibro;
+	public Libro getLib() {
+		return lib;
 	}
-	public void setIdLibro(int idLibro) {
-		this.idLibro = idLibro;
+	public void setLib(Libro lib) {
+		this.lib = lib;
 	}
+
 	
 	
 }

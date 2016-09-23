@@ -10,6 +10,7 @@ public class Usuario {
 	private Date fNacimiento;
 	private String email;
 	private String password;
+	private int idEjemplar;
 	/**
 	 * 
 	 */
@@ -21,6 +22,7 @@ public class Usuario {
 		this.setfNacimiento(new Date());
 		this.setEmail("");
 		this.setPassword("");
+		this.setIdEjemplar(0);
 	}
 	public int getId() {
 		return id;
@@ -57,6 +59,12 @@ public class Usuario {
 	}
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	public int getIdEjemplar() {
+		return idEjemplar;
+	}
+	public void setIdEjemplar(int idEjemplar) {
+		this.idEjemplar = idEjemplar;
 	}
 	
 	

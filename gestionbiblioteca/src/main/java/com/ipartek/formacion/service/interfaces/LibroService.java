@@ -1,11 +1,15 @@
-package com.ipartek.formacion.dao.interfaces;
+package com.ipartek.formacion.service.interfaces;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
+import com.ipartek.formacion.dao.LibroDAOImp;
 import com.ipartek.formacion.dao.persistencia.Libro;
 
-public interface LibroDAO extends DAOSetter{
-	
+@Service
+public interface LibroService {
+
 	public List<Libro> getAll();
 	
 	public Libro getById(int id);
@@ -15,4 +19,6 @@ public interface LibroDAO extends DAOSetter{
 	public void delete(int id);
 	
 	public Libro create(Libro libro);
+	
+	public void setLibDAO(LibroDAOImp libDAO);
 }

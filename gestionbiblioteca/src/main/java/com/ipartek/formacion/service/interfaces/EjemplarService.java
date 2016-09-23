@@ -1,10 +1,14 @@
-package com.ipartek.formacion.dao.interfaces;
+package com.ipartek.formacion.service.interfaces;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
+import com.ipartek.formacion.dao.EjemplarDAOImp;
 import com.ipartek.formacion.dao.persistencia.Ejemplar;
 
-public interface EjemplarDAO extends DAOSetter{
+@Service
+public interface EjemplarService {
 	
 	public List<Ejemplar> getAll();
 	
@@ -15,4 +19,6 @@ public interface EjemplarDAO extends DAOSetter{
 	public void delete(int id);
 	
 	public Ejemplar create(Ejemplar ejemplar);
+	
+	public void setEjemDAO(EjemplarDAOImp ejemDAO);
 }
